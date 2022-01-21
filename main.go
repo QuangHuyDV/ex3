@@ -133,7 +133,7 @@ func add3(X map[string]string) {
 
 }
 
-//ex3: Lý giải nguyên nhân lỗi.
+//ex3: Tìm lỗi.
 func errFunc() {
 	m := make(map[int]int)
 	for i := 0; i < 1000; i++ {
@@ -152,10 +152,8 @@ func errFunc() {
 			wg.Wait()
 		}()
 	}
-	for i := range m {
-		fmt.Printf(" gia tri %v\n", m[i])
-	}
 	log.Print("done")
+	fmt.Println("Lỗi: Do nhiều dữ liệu chuyển vào m cùng lúc\n -> thêm waitgroup tách các go với nhau, thêm khóa để không bị lỗi khi truyền giá trị")
 }
 
 type Line struct {
