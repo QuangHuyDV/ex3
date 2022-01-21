@@ -205,25 +205,25 @@ func achan(finish chan bool,ch chan string, scanner *bufio.Scanner) {
 
 func main() {
 	//ex1
-	fmt.Println("Sử dụng WaitGroup: ")
-	chanRoutine1()
-	time.Sleep(2*time.Second)
-	fmt.Println("----")
-	chanRoutine4()
-	time.Sleep(2*time.Second)
+	// fmt.Println("Sử dụng WaitGroup: ")
+	// chanRoutine1()
+	// time.Sleep(2*time.Second)
+	// fmt.Println("----")
+	// chanRoutine4()
+	// time.Sleep(2*time.Second)
 
-	fmt.Println("Sử dụng Mutex: ")
-	chanRoutine2()
-	time.Sleep(2*time.Second)
-	fmt.Println("----")
-	chanRoutine5()
-	time.Sleep(2*time.Second)
+	// fmt.Println("Sử dụng Mutex: ")
+	// chanRoutine2()
+	// time.Sleep(2*time.Second)
+	// fmt.Println("----")
+	// chanRoutine5()
+	// time.Sleep(2*time.Second)
 
-	fmt.Println("Sử dụng chan: ")
-	chanRoutine3()
-	time.Sleep(2*time.Second)
-	fmt.Println("----")
-	chanRoutine6()
+	// fmt.Println("Sử dụng chan: ")
+	// chanRoutine3()
+	// time.Sleep(2*time.Second)
+	// fmt.Println("----")
+	// chanRoutine6()
 
 
 	//ex2
